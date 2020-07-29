@@ -8,8 +8,8 @@ Funcionalidade:  Fazer login
 @deslogar
 Cenario: Fazer login com sucesso.
 Dado  que eu tenho um usuario
-|email|jhunior.get@hotmail.com|
-|senha|Soldado609*|
+|email|xxxxxxxx@hotmail.com|
+|senha|xxxxxxxx|
 Quando eu faço login
 Entao verifico se estou logado.
 
