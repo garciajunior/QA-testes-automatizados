@@ -1,0 +1,19 @@
+Dado('que eu tenho um usuario') do |table|
+  @email = table.rows_hash['email']
+  @senha = table.rows_hash['senha']
+  visit('https://www.malujoias.com.br/customer/account/login/')
+end
+
+Quando('eu faço login') do
+  fill_in 'login[username]', with: @email
+  fill_in 'pass', with: @senha
+  click_button('send2')
+  # find (:css 'input[value = 'entrar']').click
+end
+
+Entao('verifico se estou logado.') do
+  expect(page).to have_current_path('https://www.malujoias.com.br/customer/account/', url: true)
+  @title = find('div [class="page-title"]')
+  expect(@title.text).to eql 'Painel Geral'
+  sleep(5)
+end

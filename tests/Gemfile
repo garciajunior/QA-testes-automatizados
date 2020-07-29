@@ -1,0 +1,12 @@
+source 'http://rubygems.org'
+
+gem 'capybara'
+gem 'chrome', '~> 0.1.0'
+gem 'chromedriver-helper'
+gem 'cucumber'
+gem 'fastri'
+gem 'rcodetools'
+gem 'rspec'
+gem 'rubocop'
+gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
+gem 'site_prism'
