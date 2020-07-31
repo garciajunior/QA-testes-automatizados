@@ -1,12 +1,12 @@
 Dado('que eu tenho um usuario') do |table|
   @email = table.rows_hash['email']
   @senha = table.rows_hash['senha']
-  home.load
-  
+  home.load  
 end
 
 Quando('eu faço login') do
   home.login('jhunior.get@hotmail.com', 'Soldado609*')
+  sleep(5)
 end
 
 Entao('verifico se estou logado.') do
@@ -14,3 +14,4 @@ Entao('verifico se estou logado.') do
   expect( user_page.title.text).to eql 'Painel Geral'
   sleep(5)
 end
+ 

@@ -6,6 +6,6 @@ module Helper
     file_path = "results/screenshot/test_#{result}/run_#{timer_path}"
     screenshot = "#{file_path}/#{file_name}.png"
     page.save_screenshot(screenshot)
-    embed(screenshot, 'image/png', 'Click here')
+    attach(screenshot, 'image/png', 'Click here')
   end
 end

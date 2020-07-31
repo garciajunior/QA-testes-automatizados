@@ -1,7 +1,7 @@
 World(Helper)
 After '@deslogar' do
   user_page.logout
-  sleep(5)
+  # sleep(5)
 end
 
 # depois de cada cenario, tira um print e remove todos os espaços e virgulas
