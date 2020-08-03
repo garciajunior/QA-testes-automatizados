@@ -2,13 +2,6 @@
 
 Funcionalidade:  Fazer login
 
--Eu como aluno.
--Eu quero fazer login  na plataforma.
-# Dado
-# E 
-# Quando 
-# Entao
-
 
 @teste 
 Cenario: Fazer login com sucesso.
@@ -21,7 +14,6 @@ Cenario: Fazer login com sucesso.
 @teste @masculina @deslogar
 Cenario: Entrar na seção correntes
   Dado que estou logado
-  E  seleciono a secao corrente 
   E escolho a secao masculina
   Entao verifico se selecionei a seção Correntes Masculinas
 
